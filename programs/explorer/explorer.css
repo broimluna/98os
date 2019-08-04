@@ -1,0 +1,39 @@
+body {
+	display: flex;
+	flex-direction: column;
+}
+#address-bar,
+.toolbar {
+	flex: 0 0 auto;
+	display: flex;
+	flex-direction: row;
+	padding: 5px;
+}
+#address {
+	flex: 1;
+}
+button {
+	padding: 5px;
+}
+/* TODO: simpler button style, same as for menu buttons (also needed for tasks, start button, etc.) */
+.toolbar button:not(:hover),
+.toolbar button:disabled {
+	border-color: transparent;
+}
+.toolbar button:not(:hover)::after,
+.toolbar button:disabled::after {
+	display: none;
+}
+#content {
+	flex: 1;
+	display: flex;
+	background: white;
+	overflow: auto; /* TODO: should the folder-view have overflow: auto instead? */
+}
+#content iframe {
+	flex: 1;
+}
+.desktop-icon .title {
+	background: white;
+	color: black;
+}
