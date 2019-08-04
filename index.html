@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>98os</title>
+		<link href="layout.css" rel="stylesheet" type="text/css">
+		<link href="classic.css" rel="stylesheet" type="text/css">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=LbWArJzeO7">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=LbWArJzeO7">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=LbWArJzeO7">
+		<link rel="manifest" href="/site.webmanifest?v=LbWArJzeO7">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg?v=LbWArJzeO7" color="#5bbad5">
+		<link rel="shortcut icon" href="/favicon.ico?v=LbWArJzeO7">
+		<meta name="apple-mobile-web-app-title" content="98.js">
+		<meta name="application-name" content="98.js">
+		<meta name="msapplication-TileColor" content="#2b5797">
+		<meta name="theme-color" content="#008080">		
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+	</head>
+	<body>
+		<div class="desktop" style="background-image: url(images/clouds.jpg); background-size: cover; background-position: center;"></div>
+		<div class="taskbar">
+			<button class="start-button" title="Click here to begin.">
+				<img src="images/start.png"/><b>Start</b>
+			</button>
+			<div class="taskbar-divider"></div>
+			<!-- TODO: pinned apps and resizing handles -->
+			<div class="tasks"></div>
+			<div class="taskbar-divider"></div>
+			<div class="tray">
+				<div class="tray-icons">
+					<img class="tray-icon" src="images/icons/task-scheduler-16x16.png" title="Task Scheduler is not ready." onclick="alert('Good day to you!')">
+					<img class="tray-icon" src="images/icons/audio-okay-16x16.png" title="Volume" onclick="alert('Have a good day!')">
+				</div>
+				<div class="taskbar-time"></div>
+			</div>
+		</div>
+		<div class="start-menu" hidden style="display: none;">
+			<div class="start-menu-titlebar"></div>
+			<div class="start-menu-content">
+			Welcome to the Start Menu.
+			<br>Please enjoy your stay.
+			<br><br><br><br><br><br>
+			At the Start Menu, you can do all kinds of thing.
+			<div class="all-kinds-of-thing-container">
+				<div class="all-kinds-of-thing-start-content">
+					<ul>
+						<li><a href="#start-a-revolution">Start a revolution.</a></li>
+						<li><a href="#start-a-program">Start a program.</a></li>
+						<li><a href="#start-living-more-proactively">Start living more proactively.</a></li>
+						<li><a href="#start-a-website">Start a website.</a></li>
+						<li><a href="#start-a-game">Start a game.</a></li>
+						<!-- <li><a href="#start-a-meme">Start a meme.</a></li> -->
+					</ul>
+				</div>
+				<!-- TODO: use a template -->
+				<div class="self-help-template">
+					<h2 class="the-thing-heading">A task you ask</h2>
+					<div class="self-help-content">What is life?</div>
+					<br>
+					<br>
+					<a class="back-link" href="#start">Go Back</a>
+				</div>
+				<div class="windows-cant-do-it-you-can" hidden>
+					<h2 class="the-thing-heading">A task you ask</h2>
+					Windows can't help you with that.
+					<br>
+					But <strong>you can do it.</strong>
+					<br>
+					<br>
+					Go for it!
+					<br>
+					<br>
+					<a class="back-link" href="#start">Go Back</a>
+				</div>
+				<div class="start-a-program" hidden>
+					<h2 class="the-thing-heading">Start a program</h2>
+					What kind of program?
+					<ul>
+						<li><a href="#start-a-television-game">Start a television program.</a></li>
+						<li><a href="#start-a-radio-program">Start a radio program.</a></li>
+						<li><a href="#start-a-theater-or-musical-program">Start a theater or musical program.</a></li>
+						<li><a href="#start-a-people-program">Start a program for people.</a></li>
+						<li><a href="#start-a-computer-program">Start a computer program.</a></li>
+						<!-- <li><a href="#start-a-video-game">Start a video game.</a></li> -->
+					</ul>
+					<br>
+					<br>
+					<a class="back-link" href="#start">Go Back</a>
+				</div>
+			</div>
+			</div>
+		</div>
+		<script src="lib/pep.js"></script>
+		<script src="lib/jquery.min.js"></script>
+		<script src="lib/browserfs.js"></script>
+		<script src="lib/konami.js"></script>
+		<script src="src/3d-fun.js"></script>
+		<script src="src/helpers.js"></script>
+		<script src="src/filesystem-setup.js"></script>
+		<script src="src/$Window.js"></script>
+		<script src="src/$MenuBar.js"></script>
+		<script src="src/$IframeWindow.js"></script>
+		<script src="src/Task.js"></script>
+		<script src="src/$taskbar-time.js"></script>
+		<script src="src/$start-menu.js"></script>
+		<script src="src/$FolderView.js"></script>
+		<script src="src/$FolderViewIcon.js"></script>
+		<script src="src/$desktop.js"></script>
+		<script src="src/programs.js"></script>
+	</body>
+</html>
