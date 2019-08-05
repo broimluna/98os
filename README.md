@@ -7,7 +7,7 @@ Includes:
 * ![](images/icons/notepad-16x16.png) Notepad ([separate README](programs/notepad/README.md))
 * ![](images/icons/speaker-16x16.png) Sound Recorder ([separate README](programs/sound-recorder/README.md))
 * ![](images/icons/paint-16x16.png) Paint ([separate repository](https://github.com/1j01/jspaint))
-* ![](images/icons/discord-16x16.png) Discord ([separate repository](coming soon boi))
+* ![](images/icons/discord-16x16.png) Discord
 * ![](images/icons/internet-explorer-16x16.png) Project Browser
 * ![](images/icons/minesweeper-16x16.png) Minesweeper ([separate README](programs/minesweeper/README.md); [original repository](https://github.com/ziebelje/minesweeper)) by [Jon Ziebell](https://github.com/ziebelje/)
 * ![](images/icons/winamp2-16x16.png) Winamp 2.9 ([separate README](programs/winamp/README.md); [original repository](https://github.com/captbaritone/webamp)) by [Jordan Eldredge](https://jordaneldredge.com/)
