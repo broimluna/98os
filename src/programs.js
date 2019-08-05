@@ -78,7 +78,7 @@ function Minesweeper(){
 }
 function Chat(){
 	var $win = new $IframeWindow({
-		src: "programs/98chat/index2.html",
+		src: "programs/98chat/index.html",
 		icon: "msn",
 		title: "98chat",
 		innerWidth: 500,
