@@ -1,3 +1,5 @@
+(The source code doesnt belong to me but to Isaiah Odhner alias 1j01.)
+
 Hello! Welcome to 98.js
 https://github.com/1j01/98
 

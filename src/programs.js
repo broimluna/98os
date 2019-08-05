@@ -86,7 +86,16 @@ function Discord(){
 	});
 	return new Task($win);
 }
-
+function ExplorerBeta(){
+	var $win = new $IframeWindow({
+		src: "programs/explorerbeta/index.html",
+		icon: "internet-explorer",
+		title: "Project Browser",
+		innerWidth: 700,
+		innerHeight: 500
+	});
+	return new Task($win);
+}
 function SoundRecorder(file_path){
 	// TODO: DRY the default file names and title code (use document.title of the page in the iframe, in $IframeWindow)
 	var document_title = file_path ? file_name_from_path(file_path) : "Sound";
@@ -347,6 +356,12 @@ add_icon_not_via_filesystem({
 	shortcut: true
 });
 add_icon_not_via_filesystem({
+	title: "Project Browser",
+	icon: "internet-explorer",
+	open: ExplorerBeta,
+	shortcut: true
+});
+add_icon_not_via_filesystem({
 	title: "Minesweeper",
 	icon: "minesweeper",
 	open: Minesweeper,
@@ -359,7 +374,7 @@ add_icon_not_via_filesystem({
 	shortcut: true
 });
 add_icon_not_via_filesystem({
-	title: "Sound Recorder",
+	title: "SoundRec",
 	icon: "speaker",
 	open: SoundRecorder,
 	shortcut: true
