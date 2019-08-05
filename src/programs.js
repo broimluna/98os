@@ -78,9 +78,9 @@ function Minesweeper(){
 }
 function Chat(){
 	var $win = new $IframeWindow({
-		src: "programs/chat2/index2.html",
-		icon: "minesweeper",
-		title: "Chat",
+		src: "programs/98chat/index2.html",
+		icon: "msn",
+		title: "98chat",
 		innerWidth: 500,
 		innerHeight: 425
 	});
@@ -411,12 +411,7 @@ add_icon_not_via_filesystem({
 	open: Notepad,
 	shortcut: true
 });
-add_icon_not_via_filesystem({
-	title: "Chat",
-	icon: "notepad",
-	open: Chat,
-	shortcut: true
-});
+
 add_icon_not_via_filesystem({
 	title: "Winamp",
 	icon: "winamp2",
