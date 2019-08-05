@@ -23,7 +23,7 @@ Features:
 
 ## Try it out
 
-[ ＥＮＴＥＲ　![](images/icons/windows-update-16x16.png)　ＷＩＮＤＯＷＳ　９８　体験へようこそ](https://98.js.org/)
+[ ＥＮＴＥＲ　![](images/icons/windows-update-16x16.png)　ＷＩＮＤＯＷＳ　９８　体験へようこそ (ORIGINAL)](https://98.js.org/)
 
 [![](images/3d.jpg)](https://98.js.org/)
 
