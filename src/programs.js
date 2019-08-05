@@ -96,16 +96,6 @@ function Discord(){
  });
   return new Task($win);
 }
-function Chat(){
-	var $win = new $IframeWindow({
-		src: "programs/98chat/index.html",
-		icon: "msn",
-		title: "98chat",
-		innerWidth: 600,
-		innerHeight: 500
- });
-  return new Task($win);
-}
   function OriginalWebsite(){
 	var $win = new $IframeWindow({
 		src: "programs/98js/index.html",
