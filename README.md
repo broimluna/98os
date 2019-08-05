@@ -1,6 +1,7 @@
 
 # ![](images/icons/windows-update-32x32.png) [98.js](https://98.js.org)
 
+(NOT MADE BY ME BUT BY 1j01)
 A web based Windows 98 desktop remake.
 
 Includes:
