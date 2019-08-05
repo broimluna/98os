@@ -76,6 +76,16 @@ function Minesweeper(){
 	});
 	return new Task($win);
 }
+function Chat(){
+	var $win = new $IframeWindow({
+		src: "programs/chat2/index2.html",
+		icon: "minesweeper",
+		title: "Chat",
+		innerWidth: 500,
+		innerHeight: 425
+	});
+	return new Task($win);
+}
 function Discord(){
 	var $win = new $IframeWindow({
 		src: "programs/discord/index.html",
@@ -384,6 +394,12 @@ add_icon_not_via_filesystem({
 	title: "Notepad",
 	icon: "notepad",
 	open: Notepad,
+	shortcut: true
+});
+add_icon_not_via_filesystem({
+	title: "Chat",
+	icon: "notepad",
+	open: Chat,
 	shortcut: true
 });
 add_icon_not_via_filesystem({
