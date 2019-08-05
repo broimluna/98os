@@ -83,16 +83,16 @@ function Discord(){
 		title: "Discord",
 		innerWidth: 600,
 		innerHeight: 500
-	});
-	return new Task($win);
+ });
+  return new Task($win);
 }
-function ExplorerBeta(){
+  function OriginalWebsite(){
 	var $win = new $IframeWindow({
-		src: "programs/explorerbeta/index.html",
-		icon: "internet-explorer",
-		title: "Project Browser",
-		innerWidth: 700,
-		innerHeight: 500
+		src: "programs/98js/index.html",
+		icon: "windows-update",
+		title: "98.js.org",
+		innerWidth: 800,
+		innerHeight: 525
 	});
 	return new Task($win);
 }
@@ -347,7 +347,7 @@ add_icon_not_via_filesystem({
 add_icon_not_via_filesystem({
 	title: "Internet Explorer",
 	icon: "internet-explorer",
-	open: function(){ Explorer("https://www.google.com/"); }
+	open: function(){ Explorer("https://www.ecosia.org/"); }
 });
 add_icon_not_via_filesystem({
 	title: "Paint",
@@ -355,16 +355,17 @@ add_icon_not_via_filesystem({
 	open: Paint,
 	shortcut: true
 });
-add_icon_not_via_filesystem({
-	title: "Project Browser",
-	icon: "internet-explorer",
-	open: ExplorerBeta,
-	shortcut: true
-});
+
 add_icon_not_via_filesystem({
 	title: "Minesweeper",
 	icon: "minesweeper",
 	open: Minesweeper,
+	shortcut: true
+});
+  add_icon_not_via_filesystem({
+	title: "98.js.org",
+	icon: "windows-update",
+	open: OriginalWebsite,
 	shortcut: true
 });
 add_icon_not_via_filesystem({
