@@ -106,6 +106,16 @@ function Discord(){
 	});
 	return new Task($win);
 }
+  function Screensaver(){
+	var $win = new $IframeWindow({
+		src: "programs/pipes/index.html",
+		icon: "windows-update",
+		title: "Screensaver",
+		innerWidth: 800,
+		innerHeight: 525
+	});
+	return new Task($win);
+}
 function SoundRecorder(file_path){
 	// TODO: DRY the default file names and title code (use document.title of the page in the iframe, in $IframeWindow)
 	var document_title = file_path ? file_name_from_path(file_path) : "Sound";
@@ -363,6 +373,12 @@ add_icon_not_via_filesystem({
 	title: "Paint",
 	icon: "paint",
 	open: Paint,
+	shortcut: true
+});
+add_icon_not_via_filesystem({
+	title: "Screensaver",
+	icon: "paint",
+	open: Screensaver,
 	shortcut: true
 });
 add_icon_not_via_filesystem({
