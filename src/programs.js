@@ -109,8 +109,8 @@ function Discord(){
   function Screensaver(){
 	var $win = new $IframeWindow({
 		src: "programs/pipes/index.html",
-		icon: "screensaver",
-		title: "Screensaver",
+    icon: "screensaver",
+    title: "Screensaver",
 		innerWidth: 800,
 		innerHeight: 525
 	});
@@ -377,8 +377,8 @@ add_icon_not_via_filesystem({
 });
 add_icon_not_via_filesystem({
 	title: "Screensaver",
-	icon: "screensaver",
-	open: Screensaver,
+  icon: "screensaver",
+  open: Screensaver,
 	shortcut: true
 });
 add_icon_not_via_filesystem({
