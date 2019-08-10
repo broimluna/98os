@@ -78,9 +78,9 @@ function Minesweeper(){
 }
 function Chat(){
 	var $win = new $IframeWindow({
-		src: "programs/chat2/index2.html",
-		icon: "minesweeper",
-		title: "Chat",
+		src: "programs/98chat/index.html",
+		icon: "msn",
+		title: "98chat",
 		innerWidth: 500,
 		innerHeight: 425
 	});
@@ -91,8 +91,8 @@ function Discord(){
 		src: "programs/discord/index.html",
 		icon: "discord",
 		title: "Discord",
-		innerWidth: 600,
-		innerHeight: 500
+		innerWidth: 625,
+		innerHeight: 515
  });
   return new Task($win);
 }
@@ -101,6 +101,16 @@ function Discord(){
 		src: "programs/98js/index.html",
 		icon: "windows-update",
 		title: "98.js.org",
+		innerWidth: 800,
+		innerHeight: 525
+	});
+	return new Task($win);
+}
+  function Screensaver(){
+	var $win = new $IframeWindow({
+		src: "programs/pipes/index.html",
+		icon: "screensaver",
+		title: "Screensaver",
 		innerWidth: 800,
 		innerHeight: 525
 	});
@@ -365,7 +375,18 @@ add_icon_not_via_filesystem({
 	open: Paint,
 	shortcut: true
 });
-
+add_icon_not_via_filesystem({
+	title: "Screensaver",
+	icon: "screensaver",
+	open: Screensaver,
+	shortcut: true
+});
+add_icon_not_via_filesystem({
+	title: "98chat",
+	icon: "msn",
+	open: Chat,
+	shortcut: true
+});
 add_icon_not_via_filesystem({
 	title: "Minesweeper",
 	icon: "minesweeper",
@@ -396,12 +417,7 @@ add_icon_not_via_filesystem({
 	open: Notepad,
 	shortcut: true
 });
-add_icon_not_via_filesystem({
-	title: "Chat",
-	icon: "notepad",
-	open: Chat,
-	shortcut: true
-});
+
 add_icon_not_via_filesystem({
 	title: "Winamp",
 	icon: "winamp2",
