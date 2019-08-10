@@ -91,8 +91,8 @@ function Discord(){
 		src: "programs/discord/index.html",
 		icon: "discord",
 		title: "Discord",
-		innerWidth: 600,
-		innerHeight: 500
+		innerWidth: 625,
+		innerHeight: 515
  });
   return new Task($win);
 }
@@ -109,8 +109,8 @@ function Discord(){
   function Screensaver(){
 	var $win = new $IframeWindow({
 		src: "programs/pipes/index.html",
-		icon: "windows-update",
-		title: "Screensaver",
+    icon: "screensaver",
+    title: "Screensaver",
 		innerWidth: 800,
 		innerHeight: 525
 	});
@@ -377,8 +377,8 @@ add_icon_not_via_filesystem({
 });
 add_icon_not_via_filesystem({
 	title: "Screensaver",
-	icon: "paint",
-	open: Screensaver,
+  icon: "screensaver",
+  open: Screensaver,
 	shortcut: true
 });
 add_icon_not_via_filesystem({

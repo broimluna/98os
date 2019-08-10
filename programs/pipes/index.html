@@ -96,15 +96,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no" />
   </head>
   <body>
-    <a href="https://github.com/1j01/pipes" class="ui-container"
-      ><img
-        class="fork-me"
-        style="position: absolute; top: 0; right: 0; border: 0;"
-        src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67"
-        alt="Fork me on GitHub"
-        data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"
-    /></a>
-    <div class="controls ui-container">
+
       <button id="fullscreen-button">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 438.543 438.543">
           <path
@@ -127,36 +119,6 @@
         <span class="normal-controls-enabled">Control Camera</span>
         <span hidden class="orbit-controls-enabled">Relinquish Camera</span>
       </button>
-      <table>
-        <thead>
-          <tr>
-            <th>Mouse button</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="normal-controls-enabled">
-            <td>Primary</td>
-            <td>Change view</td>
-          </tr>
-          <tr class="normal-controls-enabled">
-            <td>Secondary</td>
-            <td>Clear pipes and restart</td>
-          </tr>
-          <tr hidden class="orbit-controls-enabled">
-            <td>Primary (Drag)</td>
-            <td>Rotate view</td>
-          </tr>
-          <tr hidden class="orbit-controls-enabled">
-            <td>Secondary (Drag) (or arrow keys)</td>
-            <td>Pan around</td>
-          </tr>
-          <tr hidden class="orbit-controls-enabled">
-            <td>Middle (Drag or Wheel)</td>
-            <td>Zoom</td>
-          </tr>
-        </tbody>
-      </table>
     </div>
     <div id="canvas-container">
       <canvas id="canvas-webgl"></canvas>
