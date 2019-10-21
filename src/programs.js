@@ -86,6 +86,16 @@ function Chat(){
 	});
 	return new Task($win);
 }
+function SCloud(){
+	var $win = new $IframeWindow({
+		src: "programs/soundcloud/index.html",
+		icon: "msn",
+		title: "SoundCloud",
+		innerWidth: 825,
+		innerHeight: 515
+	});
+	return new Task($win);
+}
 function Discord(){
 	var $win = new $IframeWindow({
 		src: "programs/discord/index.html",
@@ -385,6 +395,12 @@ add_icon_not_via_filesystem({
 	title: "98chat",
 	icon: "msn",
 	open: Chat,
+	shortcut: true
+});
+add_icon_not_via_filesystem({
+	title: "SoundCloud",
+	icon: "scloud",
+	open: SCloud,
 	shortcut: true
 });
 add_icon_not_via_filesystem({
